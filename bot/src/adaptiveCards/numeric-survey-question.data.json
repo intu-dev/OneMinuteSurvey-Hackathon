@@ -1,0 +1,8 @@
+{
+    "question": "How likely would you be to recommend a friend to work here?",
+    "description": "On a scale of 1-5, 5 being most likely, 1 being not at all.",
+    "image": "https://static.vecteezy.com/system/resources/previews/004/842/368/original/hipster-fox-avatar-vector.jpg",
+    "surveyId": "2",
+    "questionIndex": 1,
+    "questionCount": 8
+}

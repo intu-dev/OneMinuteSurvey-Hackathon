@@ -1,0 +1,72 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.14",
+    "version": "1.0.0",
+    "id": "fd22d595-6e2a-40af-8d51-5785d81ad17e",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://oneminsurveydev8c5067tab.z33.web.core.windows.net",
+        "privacyUrl": "https://oneminsurveydev8c5067tab.z33.web.core.windows.net/index.html#/privacy",
+        "termsOfUseUrl": "https://oneminsurveydev8c5067tab.z33.web.core.windows.net/index.html#/termsofuse"
+    },
+    "icons": {
+        "color": "resources/color.png",
+        "outline": "resources/outline.png"
+    },
+    "name": {
+        "short": "One Minute Survey",
+        "full": "Full name for Hello World Tab with Backend"
+    },
+    "description": {
+        "short": "Short description of One Minute Survey",
+        "full": "Full description of One Minute Survey"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "fa975eba-852e-46d9-ac8f-3342cc4e7baf",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://oneminsurveydev8c5067tab.z33.web.core.windows.net/index.html#/config",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team",
+                "groupchat"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "index",
+            "name": "Manage Surveys",
+            "contentUrl": "https://oneminsurveydev8c5067tab.z33.web.core.windows.net/index.html#/tab",
+            "websiteUrl": "https://oneminsurveydev8c5067tab.z33.web.core.windows.net/index.html#/tab",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "oneminsurveydev8c5067bot.azurewebsites.net",
+        "oneminsurveydev8c5067tab.z33.web.core.windows.net"
+    ],
+    "webApplicationInfo": {
+        "id": "eda69a2e-3c45-4ddf-b0f6-3ed8bfcf6b58",
+        "resource": "api://oneminsurveydev8c5067tab.z33.web.core.windows.net/eda69a2e-3c45-4ddf-b0f6-3ed8bfcf6b58"
+    }
+}

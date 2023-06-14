@@ -1,0 +1,61 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "style": "Person",
+              "url": "${image}",
+              "size": "Large",
+              "horizontalAlignment": "Center"
+            }
+          ],
+          "width": "auto",
+          "verticalContentAlignment": "Center"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "${title}",
+              "wrap": true,
+              "size": "Large",
+              "weight": "Bolder"
+            }
+          ],
+          "verticalContentAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "${description}",
+      "wrap": true,
+      "spacing": "Medium"
+    },
+    {
+      "type": "ActionSet",
+      "spacing": "Small",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "title": "Get started",
+          "verb": "surveyStart",
+          "data": 
+          {
+            "surveyId": "${surveyId}"
+          }
+        }
+      ],
+      "horizontalAlignment": "Center"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

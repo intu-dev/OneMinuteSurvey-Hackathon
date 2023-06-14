@@ -1,0 +1,99 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "style": "Person",
+              "url": "${image}",
+              "size": "large",
+              "width": "75px",
+              "height": "75px"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Question ${questionIndex+1} of ${questionCount}",
+              "wrap": true,
+              "horizontalAlignment": "Right"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${question}",
+              "wrap": true,
+              "size": "large",
+              "weight": "bolder"
+            }
+          ],
+
+          "verticalContentAlignment": "Center"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "spacing": "none",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "title": "Always",
+          "verb": "surveyResponse",
+          "data": {
+            "surveyId": "${surveyId}",
+            "questionIndex": "${questionIndex}",
+            "response": "4"
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Often",
+          "verb": "surveyResponse",
+          "data": {
+            "surveyId": "${surveyId}",
+            "questionIndex": "${questionIndex}",
+            "response": "3"
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Rarely",
+          "verb": "surveyResponse",
+          "data": {
+            "surveyId": "${surveyId}",
+            "questionIndex": "${questionIndex}",
+            "response": "2"
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Never",
+          "verb": "surveyResponse",
+          "data": {
+            "surveyId": "${surveyId}",
+            "questionIndex": "${questionIndex}",
+            "response": "1"
+          }
+        }
+      ],
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${description}",
+      "wrap": true,
+      "spacing": "medium"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

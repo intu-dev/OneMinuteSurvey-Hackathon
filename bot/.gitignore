@@ -1,0 +1,41 @@
+# TypeScript output
+dist
+out
+
+# Dependency directories
+node_modules
+
+# Azure Functions artifacts
+bin
+obj
+appsettings.json
+
+# ignore local.settings.json if it contains your own credentials
+# local.settings.json
+
+# misc
+.DS_Store
+.deployment
+.env
+
+# Azurite emulator
+_storage_emulator
+
+# Local data
+.notification.localstore.json
+
+# Created by https://www.gitignore.io/api/visualstudiocode
+# Edit at https://www.gitignore.io/?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*      # Maybe .vscode/**/* instead - see comments
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+**/.history
+
+# End of https://www.gitignore.io/api/visualstudiocode
